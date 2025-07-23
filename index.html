@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Spelling Bee Rock</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+  <div id="app">
+    <h1>Spelling Bee Rock 🎸</h1>
+    <div id="mode-selection">
+      <h2>Selecciona una modalidad</h2>
+      <button onclick="startLevelMode()">Modo por Nivel</button>
+      <button onclick="startCupMode()">Modo Copa</button>
+    </div>
+    <div id="game-area" style="display:none;">
+      <div id="lives"></div>
+      <div id="word-section">
+        <p id="spanish-word"></p>
+        <button onclick="playAudio()">🔊 Normal</button>
+        <button onclick="playSlowAudio()">🐢 Lento</button>
+        <button onclick="playExtraSlowAudio()">🐌 Extra Lento</button>
+        <p id="progress"></p>
+      </div>
+      <input type="text" id="user-input" placeholder="Escribe la palabra...">
+      <button onclick="checkAnswer()">Revisar</button>
+      <p id="feedback"></p>
+      <p id="score"></p>
+      <button id="next-button" style="display:none;" onclick="nextWord()">Continuar</button>
+    </div>
+    <div id="results-area" style="display:none;">
+      <h2>Juego Terminado</h2>
+      <p id="final-score"></p>
+      <input type="text" id="player-name" placeholder="Tu nombre">
+      <button onclick="saveScore()">Guardar Puntaje</button>
+      <button onclick="goHome()">Volver al Menú</button>
+    </div>
+    <div id="highscores">
+      <h2>Mejores Puntajes</h2>
+      <ol id="highscore-list"></ol>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>

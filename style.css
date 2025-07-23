@@ -1,0 +1,16 @@
+
+body {
+  font-family: sans-serif;
+  background: #fff;
+  color: #000;
+  text-align: center;
+  padding: 2em;
+}
+button {
+  margin: 5px;
+  padding: 10px;
+}
+input {
+  padding: 5px;
+  margin-top: 10px;
+}
